@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+h2 {
+    padding-bottom: 5px;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+#kelolaobat, #kelolauser {
+    width: 50%;
+    padding: .5rem;
+    background-color: #42f5fe;
+    border: 2px solid #b1fbff;
+    outline: none;
+    border-radius: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    justify-self: end;
+}
+
+#kelolaobat:hover,
+#kelolauser:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #42f5fe;
+}
+
+#logout {
+    width: 100%;
+    padding: .5rem;
+    background-color: #ff4e4e;
+    border: 2px solid #ff4e4e;
+    outline: none;
+    border-radius: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+#logout:hover {
+    background-color: #fff;
+    color: #ff4e4e;
+}
+
+table {
+    width: 100%;
+}
+
+tr, td {
+    background-color: #f8f8f8;
+    padding: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+th {
+    background-color: #b1fbff;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.tabledetail {
+    margin-top: 1rem;
+}
+
+.kelola {
+    display: grid;
+    gap: .5rem;
+    grid-auto-flow: column;
+    margin-top: .5rem;
+}
+
+.logact {
+    height: 60vh;
+    overflow: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

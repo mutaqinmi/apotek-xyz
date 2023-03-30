@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.custser {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custser > img {
+    width: 2rem;
+}
+
+.custser > span {
+    color: #2aedf7;
+    margin-right: .5rem;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper > .logo > img {
+    width: 5rem;
+    margin-right: .5rem;
+}
+
+.wrapper > .logo > h1 {
+    color: #00ffd0;
+}
+
+.loginform {
+    width: 18rem;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px #2aedf73d;
+}
+
+.loginform > h2 {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #2aedf7;
+    color: #2aedf7;
+    margin-bottom: 1rem;
+}
+
+.loginform > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username, .password {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#username, #password {
+    margin-top: .2rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    background-color: #f3f3f3;
+}
+
+.login {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 2rem;
+    border: 2px solid #2aedf7;
+    padding: .5rem;
+    background-color: #2aedf7;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.login:hover {
+    background-color: #fff;
+    color: #2aedf7;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .2rem;
+}
+
+.show, .forget {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forget > a {
+    color: #2aedf7;
+}
+
+@media screen and (min-width: 768px) {
+    .wrapper {
+        flex-direction: row;
+    }
+}
